@@ -1,0 +1,79 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Element Selector */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* ID Selector */
+  #main-title {
+    font-size: 2.5rem;
+    color: #4e54c8;
+    margin-top: 20px;
+  }
+  
+  /* Class Selector */
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 4px solid #4e54c8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  
+  /* Class Selector */
+  .intro-text {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Group Selector */
+  h2, p {
+    margin: 10px;
+  }
+  
+  /* Descendant Selector */
+  header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4e54c8;
+    font-weight: bold;
+  }
+  
+  /* Pseudo-class Selector */
+  header nav a:hover {
+    color: #222;
+  }
+  
+  /* Child Selector */
+  .hero-section > img {
+    transition: transform 0.3s;
+  }
+  
+  /* Pseudo-class Selector */
+  .hero-section > img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Adjacent Sibling Selector */
+  h2 + p {
+    font-style: italic;
+  }
+  
+  /* Attribute Selector */
+  img[alt="Prachi Chougale"] {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
