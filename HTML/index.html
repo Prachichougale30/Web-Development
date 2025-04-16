@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments Hub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #2b1055, #7597de);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      padding: 50px 40px;
+      max-width: 550px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, #ff00cc, #3333ff, #00ffff, #ff00cc);
+      animation: rotate 6s linear infinite;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      inset: 5px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .container > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      background: linear-gradient(to right, #00ffe7, #ff00cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 20px;
+    }
+
+    .btn {
+      background: #ffffff10;
+      color: #fff;
+      padding: 12px 20px;
+      border: 2px solid #00ffe7;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+    }
+
+    .btn:hover {
+      background: #00ffe7;
+      color: #000;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 10px #00ffe7, 0 0 25px #00ffe7;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HTML Assignments</h1>
+    <div class="btn-grid">
+      <a class="btn" href="EXP 1/One.html">Assignment 1</a>
+      <a class="btn" href="EXP  2/2ND.HTML">Assignment 2</a>
+      <a class="btn" href="EXP 3/3RD.HTML">Assignment 3</a>
+      <a class="btn" href="EXP 4/4TH.html">Assignment 4</a>
+      <a class="btn" href="EXP 5/5TH.HTML">Assignment 5</a>
+      <a class="btn" href="6TH FRAME/mainIndex.html">Assignment 6</a>
+      <a class="btn" href="7th/link.html">Assignment 7</a>
+      <a class="btn" href="EXP 4/4TH.html">Assignment 8</a>
+      <a class="btn" href="EXP 9/9th_Registration_Form.html">Assignment 9</a>
+      <a class="btn" href="EXP 10/10th_Resume.html">Assignment 10</a>
+    </div>
+  </div>
+</body>
+</html>
