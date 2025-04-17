@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi's Assignments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #000000, #0f0f0f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 25px;
+      padding: 50px 40px;
+      max-width: 700px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, #00ffe7, #ff00d4, #39ff14, #00ffe7);
+      animation: rotate 5s linear infinite;
+      z-index: 0;
+      opacity: 0.3;
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .container > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #1dc6dc;
+      background: linear-gradient(to right, #00ffe7, #ff00d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px #0ba399, 0 0 20px #00ffe7;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .btn {
+      padding: 18px 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 30px 5px 30px 5px;
+      background: linear-gradient(to right, #ff00d4, #00ffe7);
+      color: #fff;
+      box-shadow: 0 0 15px #00ffe7, 0 0 25px #ff00d4;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05) rotate(-2deg);
+      background: linear-gradient(to right, #39ff14, #00ffe7);
+      box-shadow: 0 0 20px #39ff14, 0 0 30px #00ffe7;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .btn {
+        font-size: 1em;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Prachi's Web Development Assignments</h1>
+    <div class="button-container">
+      <a href="HTML/index.html" class="btn">HTML Assignments</a>
+      <a href="CSS/index.html" class="btn">CSS Assignments</a>
+      <a href="XML_CSS/XML_index.html" class="btn">XML Assignments</a>
+    </div>
+  </div>
+</body>
+</html>
